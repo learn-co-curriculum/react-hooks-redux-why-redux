@@ -12,7 +12,7 @@ In this lesson, we will learn about the Redux architecture for building web appl
 
   As our react applications became larger, our state became more spread out between different  components.  There are ways to get around this like storing all of our state in a container component, but this seems to give our view the responsibility of managing our data.  In addition, you may remember the complications with passing data from a component down as props, sometimes across many levels.
 
-	Instead, redux encourages storing all of our data necessary for our application in a plain javascript object called the state.  It looks like this:
+Instead, redux encourages storing all of our data necessary for our application in a plain javascript object called the state.  It looks like this:
 
   ```javascript
   state = {
