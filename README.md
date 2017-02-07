@@ -10,9 +10,9 @@ In this lesson, we will learn about the Redux architecture for building web appl
 
 #### Single Source Of Truth
 
-  As our React applications became larger, our state became more spread out between different  components.  There are ways to get around this, like storing all of our state in a container component, but this seems to give our view the responsibility of managing our data.  In addition, you may remember the complications of passing data from a component down as props, sometimes across many levels.
+  As our React applications became larger, our state became more spread out between different components.  There are ways to get around this, like storing all of our state in a container component, but this seems to give our view the responsibility of managing our data.  In addition, you may remember the complications of passing data from a component down as props, sometimes across many levels.
 
-Instead, Redux encourages storing all of the data necessary for our application in a plain JavaScript object called the state.  It looks like this:
+Instead, Redux encourages storing all of the necessary data in our application as a plain JavaScript object called state.  It looks like this:
 
   ```javascript
   state = {
