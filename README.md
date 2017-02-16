@@ -3,16 +3,16 @@ Why Redux?
 
 In this lesson, we will learn about the Redux architecture for building web applications. By the end of the lesson you will be able to:
 
-* Understand how Redux encourages a single source of truth.
+* Understand how __Redux__ encourages a single source of truth.
 * Understand how actions fit into the Redux flow.
 
 ## Benefits of moving to Redux
 
 #### Single Source Of Truth
 
-  As our React applications became larger, our state became more spread out between different  components.  There are ways to get around this, like storing all of our state in a container component, but this seems to give our view the responsibility of managing our data.  In addition, you may remember the complications of passing data from a component down as props, sometimes across many levels.
+  As our __React__ applications became larger, our state became more spread out between different components.  There are ways to get around this, like storing all of our state in a container component, but this seems to give our view the responsibility of managing our data.  In addition, you may remember the complications of passing data from a component down as props, sometimes across many levels.
 
-Instead, Redux encourages storing all of the data necessary for our application in a plain JavaScript object called the state.  It looks like this:
+Instead, __Redux__ encourages storing all of the necessary data in our application as a plain JavaScript object called state.  It looks like this:
 
   ```javascript
   state = {
@@ -37,7 +37,7 @@ This is the application state. It holds all of our data and is simply a JavaScri
 
 #### How we update our state.
 
-  So we hold the all of our data in one place.  When we want to update it, we send an action, which is a set of strict instructions Redux will use for how to update it.  
+  So we hold the all of our data in one place.  When we want to update it, we send an action, which is a set of strict instructions __Redux__ will use for how to update it.  
 
   ```javascript
   action = {
@@ -49,7 +49,7 @@ This is the application state. It holds all of our data and is simply a JavaScri
   }
   ```
 
-  Here, we can imagine that after a user fills out a form and clicks submit, we will create an action that tells Redux how to incorporate the update into the state.  Any time we update the state in Redux, we must create an action first.  And this action is just a plain old JavaScript object.
+  Here, we can imagine that after a user fills out a form and clicks submit, we will create an action that tells __Redux__ how to incorporate the update into the state.  Any time we update the state in __Redux__, we must create an action first. And this action is just a plain old JavaScript object.
 
   Now you can start to see how Redux allows us to update our state:
 
@@ -59,7 +59,7 @@ This is the application state. It holds all of our data and is simply a JavaScri
 
 ## Summing Up
 
-* Redux places all of our data in one place -- the state.  This state is just a plain JavaScript object.
+* __Redux__ places all of our data in one place -- the state.  This state is just a plain JavaScript object.
 * To change our application state, we need to first create an action that holds the information for how to update that state.
 * The action, combined with the previous state, leads to an updated state.
 
