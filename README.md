@@ -37,7 +37,7 @@ This is the application state. It holds all of our data and is simply a JavaScri
 
 #### How we update our state.
 
-  So we hold the all of our data in one place.  When we want to update it, we send an action, which is a set of strict instructions __Redux__ will use for how to update it.  
+So we hold all of our data in one place.  When we want to update it, we send an action, which is a set of strict instructions __Redux__ will use for how to update it.  
 
   ```javascript
   action = {
