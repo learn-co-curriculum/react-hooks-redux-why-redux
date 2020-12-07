@@ -5,15 +5,15 @@
 In this lesson, we will learn about the Redux architecture for building web
 applications. By the end of the lesson you will be able to:
 
-* Understand how __Redux__ encourages a single source of truth.
-* Understand how actions fit into the Redux flow.
+- Understand how **Redux** encourages a single source of truth.
+- Understand how actions fit into the Redux flow.
 
-## Benefits of moving to Redux
+## Benefits of Moving to Redux
 
 #### Single Source Of Truth
 
-As our __React__ applications become larger, our state becomes more spread out
-between different components.  At a certain point, the component tree becomes a
+As our **React** applications become larger, our state becomes more spread out
+between different components. At a certain point, the component tree becomes a
 web of props and state that can obscure our view of how components are handling
 and sharing data with each other.
 
@@ -21,33 +21,34 @@ There are ways to get around this, like storing all of our state in one high
 level container component, but this can ultimately _increase_ the complexity of
 your props.
 
-__Redux__ offers a different solution. It encourages storing all of the
+**Redux** offers a different solution. It encourages storing all of the
 necessary data in our application in a JavaScript object _separate_ from our
-components.  It looks like this:
+components. Picture having all your application state in one big object, like
+this:
 
 ```javascript
 state = {
   user: {
-    name: 'bob',
-    hometown: 'philly'
+    name: "bob",
+    hometown: "philly",
   },
   interests: [
     {
-      name: 'pokemon',
-      type: 'game'
+      name: "pokemon",
+      type: "game",
     },
     {
-      name: 'game of thrones',
-      type:'tv show'
-    }
-  ]
-}
+      name: "game of thrones",
+      type: "tv show",
+    },
+  ],
+};
 ```
 
-Similar to component state, all our data is held in an object. The difference
-here is that, since Redux state is separate from the component tree, we can grab
-_any_ part of this data for _any_ component that needs it, just by connecting
-the component!
+Similar to component state, all our data can be held in an object. The
+difference here is that, since Redux state is separate from the component tree,
+we can grab _any_ part of this data for _any_ component that needs it, just by
+connecting the component!
 
 #### Accessing Our State
 
@@ -69,26 +70,26 @@ In Redux all these interactions are structured the same way. Every component we
 allow can get and update state data regardless of the position of components in
 a tree.
 
-#### Updating Our state.
+#### Updating Our State
 
 So we hold all of our data in one place and with some configuration, we can read
 it as props in regular React components. When we want to update that data, we
 must send an action, which is a set of strict instructions _we create_ that
-__Redux__ will use for how to update it.  
+**Redux** will use for how to update it.
 
 ```javascript
 action = {
-  type: 'ADD_INTEREST',
-  newInterest: {
-    name: 'hockey',
-    type: 'sport'
-  }
-}
+  type: "ADD_INTEREST",
+  payload: {
+    name: "hockey",
+    type: "sport",
+  },
+};
 ```
 
 Here, we can imagine that after a user fills out a form and clicks submit, we
-will create an action that tells __Redux__ how to incorporate the update into
-the state.  Any time we update the state in __Redux__, we must create an action
+will create an action that tells **Redux** how to incorporate the update into
+the state. Any time we update the state in **Redux**, we must create an action
 first. This action is just a plain old JavaScript object.
 
 These actions are also made available to components. Any component we connect
@@ -101,8 +102,8 @@ is made.
 
 ## Summing Up
 
-__Redux__ places all of our data in one place -- the state.  This state is just
-a plain JavaScript object. In fact, all the pieces of Redux are plain old
+**Redux** places all of our data in one place &mdash; the state. This state is just a
+plain JavaScript object. In fact, all the pieces of Redux are plain old
 JavaScript. It is the pattern, the way the information flows that makes Redux
 awesome.
 
@@ -112,7 +113,7 @@ produces an updated state.
 
 ## Resources
 
-* [Redux Justification - Dan Abramov](https://www.youtube.com/watch?v=xsSnOQynTHs)
-* [Looking back at Redux - Dan Abramov](https://www.youtube.com/watch?v=uvAXVMwHJXU)
+- [Redux Justification - Dan Abramov](https://www.youtube.com/watch?v=xsSnOQynTHs)
+- [Looking back at Redux - Dan Abramov](https://www.youtube.com/watch?v=uvAXVMwHJXU)
 
 <p class='util--hide'>View <a href='https://learn.co/lessons/why-redux'>Why Redux</a> on Learn.co and start learning to code for free.</p>
