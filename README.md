@@ -107,7 +107,7 @@ plain JavaScript object. In fact, all the pieces of Redux are plain old
 JavaScript. It is the pattern, the way the information flows that makes Redux
 awesome.
 
-To change our application state, we need create an action that holds information
+To change our application state, we need to create an action that holds information
 for how to update that state. The action, combined with the previous state,
 produces an updated state.
 
