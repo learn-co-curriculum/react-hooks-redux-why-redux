@@ -102,7 +102,7 @@ is made.
 
 ## Summing Up
 
-**Redux** places all of our data in one place &mdash; the state. This state is just a
+**Redux** places all of our data in one place — the state. This state is just a
 plain JavaScript object. In fact, all the pieces of Redux are plain old
 JavaScript. It is the pattern, the way the information flows that makes Redux
 awesome.
