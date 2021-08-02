@@ -115,5 +115,3 @@ produces an updated state.
 
 - [Redux Justification - Dan Abramov](https://www.youtube.com/watch?v=xsSnOQynTHs)
 - [Looking back at Redux - Dan Abramov](https://www.youtube.com/watch?v=uvAXVMwHJXU)
-
-<p class='util--hide'>View <a href='https://learn.co/lessons/why-redux'>Why Redux</a> on Learn.co and start learning to code for free.</p>
