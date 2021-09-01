@@ -1,12 +1,14 @@
 # Why Redux?
 
-## Objectives
+## Learning Goals
+
+- Explain how **Redux** encourages a single source of truth
+- Explain how actions fit into the Redux flow
+
+## Introduction
 
 In this lesson, we will learn about the Redux architecture for building web
-applications. By the end of the lesson you will be able to:
-
-- Understand how **Redux** encourages a single source of truth.
-- Understand how actions fit into the Redux flow.
+applications.
 
 ## Benefits of Moving to Redux
 
