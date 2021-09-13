@@ -12,8 +12,6 @@ applications.
 
 ## Benefits of Moving to Redux
 
-#### Single Source Of Truth
-
 As our **React** applications become larger, our state becomes more spread out
 between different components. At a certain point, the component tree becomes a
 web of props and state that can obscure our view of how components are handling
@@ -50,9 +48,10 @@ state = {
 Similar to component state, all our data can be held in an object. The
 difference here is that, since Redux state is separate from the component tree,
 we can grab _any_ part of this data for _any_ component that needs it, just by
-connecting the component!
+connecting the component! Using Redux means we have a **single source of truth**
+for our application's state.
 
-#### Accessing Our State
+## Accessing Our State
 
 To make this state available for components to connect to, we provide access by
 wrapping the component tree, similar to `Router`. This gives us access to Redux
@@ -72,7 +71,7 @@ In Redux all these interactions are structured the same way. Every component we
 allow can get and update state data regardless of the position of components in
 a tree.
 
-#### Updating Our State
+## Updating Our State
 
 So we hold all of our data in one place and with some configuration, we can read
 it as props in regular React components. When we want to update that data, we
